@@ -1,0 +1,56 @@
+\documentclass[texcoord,
+%    grid,
+%    gridunit=mm,
+%    gridcolor=red!60,
+%    subgridcolor=gray!60,
+    10pt]{beamer}
+%\documentclass{beamer}
+\input{preamble}
+\input{setup}
+%
+\title{Uncertainty quantification of vaccination policies:
+}%
+    \subtitle{%
+        \textcolor{orange}{%
+            a model for stock management with random fluctuations.
+        }
+    }
+    \date{\textcolor{brown}{June 9,  2022}}
+    \author{\bf
+        YHG, SDIV, AMS
+    }
+    \institute{
+        \textcolor{verde}{
+            UNACH,
+            CONACYT-Universidad de Sonora,
+            Universidad de Sonora
+        }
+    }
+\titlegraphic{
+    \begin{picture}(0,0)
+        \put(330, 15){
+             \makebox(0,0)[rt]{
+                 %\includegraphics[width=2.5cm]{./images/logo_siam.png}
+                \includegraphics[width=12.5cm]{./images/logo_header.png}
+            }
+        }
+    \end{picture}
+ }
+\begin{document}
+    \maketitle
+     \section*{Introduction}
+         \input{introduction}
+     \begin{frame}{Outline}
+         \hypersetup{linkcolor=black}
+         \setbeamertemplate{section in toc}[sections numbered]
+         \tableofcontents
+     \end{frame}
+     \section{Model Formulation on continuous time}
+         \input{modelformulation}
+     \section{Non standar discrete approximation}
+         \input{nonstandar_approx}
+     \section{Numeric Results}
+        \input{numericRes}
+     \section{TODO list}
+        \input{todo}
+\end{document}
